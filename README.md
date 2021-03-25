@@ -5,10 +5,26 @@ PCB design workshop organized by BUET Robotics Society, in collaboration with En
 
 - Download the Proteus 8.6 design suite setup file from <a href="https://www.freesoftwarefiles.com/education/proteus-professional-8-6-free-download/">this link</a>.
 - You can follow <a href="https://youtu.be/R6R6jASjdbw">this video</a> for installation.
-- Starter files have been provided prior to the workshop that will be used during the workshop for designing a PCB, the participants are encouraged to try and simulate the circuit to see if everything is working. PCB design based on this circuit will be discussed during the workshop session.
+- Starter file has been provided prior to the workshop that will be used during the workshop for designing a PCB, the participants are encouraged to try and simulate the circuit to see if everything is working. PCB design based on this circuit will be discussed during the workshop session.
 - <a href="https://github.com/BUETRoboticsSociety/PCB-Design-Workshop-2021/blob/main/Online%20Session/Circuit%20Test.pdsprj">Starter file 1</a> - a basic clock counter circuit based on 555 timer IC and alphanumeric display output. Running the simulation shows the display counting up from 0 to 9.
-- <a href="https://github.com/BUETRoboticsSociety/PCB-Design-Workshop-2021/blob/main/Online%20Session/Circuit%20PCB.pdsprj">Starter file 2</a> - demo PCB design based on starter file 1.
+<figure align="center">
+    <img src="Screenshots/starter.gif" alt="drawing" width="200"/>
+    <figcaption>Decade counter</figcaption>
+</figure>
+
 - <a href="https://github.com/BUETRoboticsSociety/PCB-Design-Workshop-2021/tree/main/Online%20Session/Datasheets">Directory</a> containing the datasheets of components used in starter file 1.
+
+- Workshop objective - designing a PCB for the decade counter circuit.
+
+<figure align="center">
+    <img src="Screenshots/pcb.png" alt="drawing" width="200"/>
+    <figcaption>Workshop outcome</figcaption>
+</figure>
+
+<figure align="center">
+    <img src="Screenshots/pcb.gif" alt="drawing" width="200"/>
+    <figcaption>3D visualizing PCB</figcaption>
+</figure>
 
 ## Workshop Files
 
