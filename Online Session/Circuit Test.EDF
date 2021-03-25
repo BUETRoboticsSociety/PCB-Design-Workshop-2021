@@ -6,9 +6,9 @@
  (resolution mm 100000)
  (unit mm)
  (structure
-  (boundary (rect pcb -79.09560 24.76500 -29.10840 75.81900))
+  (boundary (rect pcb -29.20560 4.36500 20.88900 70.88900))
   (flip_style mirror_first)
-  (layer TOP (type signal) (direction horizontal))
+  (layer TOP (type signal) (direction off))
   (layer I1 (type signal) (direction off))
   (layer I2 (type signal) (direction off))
   (layer I3 (type signal) (direction off))
@@ -23,7 +23,7 @@
   (layer I12 (type signal) (direction off))
   (layer I13 (type signal) (direction off))
   (layer I14 (type signal) (direction off))
-  (layer BOT (type signal) (direction vertical))
+  (layer BOT (type signal) (direction orthogonal))
   (grid via  0.63500)
   (grid wire 0.63500)
   (control
@@ -49,17 +49,17 @@
   )
  )
  (placement
-  (component "DD14SEG-DIL18_DISP1" (place DISP1 -76.20000 25.40000 front 0))
-  (component DIL16_U3 (place U3 -50.80000 54.61000 front 180))
-  (component DIL16_U2 (place U2 -71.12000 59.69000 front 0))
-  (component DIL08_U1 (place U1 -43.18000 59.69000 front 0))
-  (component CAP10_C1 (place C1 -30.48000 64.77000 front 90))
-  (component CAP10_C2 (place C2 -35.56000 71.12000 front 180))
-  (component RES40_R1 (place R1 -38.10000 74.93000 front 180))
-  (component RES40_R2 (place R2 -45.72000 71.12000 front 180))
-  (component RES40_R3 (place R3 -43.18000 44.45000 front 90))
-  (component LED_D1 (place D1 -38.10000 50.80000 front 270))
-  (component "TBLOCK-I2_J1" (place J1 -38.10000 36.83000 front 270))
+  (component "DD14SEG-DIL18_DISP1" (place DISP1 -22.50000 5.00000 front 0))
+  (component DIL16_U3 (place U3 7.78000 35.12000 front 180))
+  (component DIL16_U2 (place U2 7.50000 47.50000 front 180))
+  (component DIL08_U1 (place U1 7.50000 60.00000 front 180))
+  (component CAP10_C1 (place C1 15.00000 60.00000 front 270))
+  (component CAP10_C2 (place C2 7.50000 65.00000 front 180))
+  (component LED_D1 (place D1 15.00000 47.50000 front 90))
+  (component RES40_R1 (place R1 5.00000 70.00000 front 180))
+  (component RES40_R2 (place R2 -5.00000 65.00000 front 180))
+  (component RES40_R3 (place R3 20.00000 50.00000 front 90))
+  (component "TBLOCK-I2_J1" (place J1 -22.50000 60.00000 front 90))
  )
  (library
   (image "DD14SEG-DIL18_DISP1" (side front)
@@ -142,6 +142,11 @@
    (pin PS2 (rotate 0) 0 0.00000 0.00000)
    (pin PS2 (rotate 0) 1 2.54000 0.00000)
   )
+  (image LED_D1 (side front)
+   (outline (rect TOP -2.00660 -2.64160 3.91160 3.27660))
+   (pin PS3 (rotate 0) 0 0.00000 0.00000)
+   (pin PS3 (rotate 0) 1 2.54000 0.00000)
+  )
   (image RES40_R1 (side front)
    (outline (rect TOP -0.88900 -0.88900 11.04900 0.88900))
    (pin PS2 (rotate 0) 0 0.00000 0.00000)
@@ -156,11 +161,6 @@
    (outline (rect TOP -0.88900 -0.88900 11.04900 0.88900))
    (pin PS2 (rotate 0) 0 0.00000 0.00000)
    (pin PS2 (rotate 0) 1 10.16000 0.00000)
-  )
-  (image LED_D1 (side front)
-   (outline (rect TOP -2.00660 -2.64160 3.91160 3.27660))
-   (pin PS3 (rotate 0) 0 0.00000 0.00000)
-   (pin PS3 (rotate 0) 1 2.54000 0.00000)
   )
   (image "TBLOCK-I2_J1" (side front)
    (outline (rect TOP -2.64160 -5.18160 7.72160 5.18160))
@@ -297,7 +297,7 @@
  (network
   (net "#00011"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -306,7 +306,7 @@
   )
   (net "#00014"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -315,25 +315,25 @@
   )
   (net "#00015"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
    )
    (pins U1-4 C1-1)
   )
-  (net "#00016"
+  (net "#00017"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
    )
-   (pins R3-0 D1-1)
+   (pins D1-1 R3-0)
   )
   (net "#00019"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -342,7 +342,7 @@
   )
   (net "#00020"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -351,7 +351,7 @@
   )
   (net "#00021"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -360,7 +360,7 @@
   )
   (net "#00022"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -369,7 +369,7 @@
   )
   (net "A"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -378,7 +378,7 @@
   )
   (net "B"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -387,7 +387,7 @@
   )
   (net "C"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -396,7 +396,7 @@
   )
   (net "D"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -405,7 +405,7 @@
   )
   (net "E"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -414,7 +414,7 @@
   )
   (net "F"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -423,7 +423,7 @@
   )
   (net "G"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -432,7 +432,7 @@
   )
   (net "GND"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_POWER
     )
@@ -442,7 +442,7 @@
   )
   (net "TIMER_OUTPUT"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -451,7 +451,7 @@
   )
   (net "VCC/VDD"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_POWER
     )
@@ -477,7 +477,7 @@
    "#00011"
    "#00014"
    "#00015"
-   "#00016"
+   "#00017"
    "#00019"
    "#00020"
    "#00021"
