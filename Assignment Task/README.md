@@ -32,6 +32,50 @@ The circuit has a 555 timer circuit like before. The timer is used as a clock in
 
 ## Submission
 
-- After completing the design, simply save the project properly. Then go to <a href="https://forms.gle/bEbCqKbmde4jzn99A">this google form link</a>. In the **Submission File** field, upload the **Assignment Circuit.pdsprj** file only. Please do not add anything else.
+- After completing the design, simply save the project properly. Then go to the google form link</a>. In the **Submission File** field, upload the **Assignment Circuit.pdsprj** file only. Please do not add anything else.
 
 - Submit the google form to finish the assignment :D
+
+## Submitted Designs
+
+- Below are some of the designs that were submitted :D
+
+<figure align="center">
+    <img src="Screenshots/Submissions/1.png" alt="drawing" width=400/>
+    <figcaption>Submitted Design</figcaption>
+</figure>
+
+<figure align="center">
+    <img src="Screenshots/Submissions/2.png" alt="drawing" width=400/>
+    <figcaption>Submitted Design</figcaption>
+</figure>
+
+<figure align="center">
+    <img src="Screenshots/Submissions/3.png" alt="drawing" width=400/>
+    <figcaption>Submitted Design</figcaption>
+</figure>
+
+<figure align="center">
+    <img src="Screenshots/Submissions/4.png" alt="drawing" width=400/>
+    <figcaption>Submitted Design</figcaption>
+</figure>
+
+<figure align="center">
+    <img src="Screenshots/Submissions/5.png" alt="drawing" width=400/>
+    <figcaption>Submitted Design</figcaption>
+</figure>
+
+<figure align="center">
+    <img src="Screenshots/Submissions/6.png" alt="drawing" width=400/>
+    <figcaption>Submitted Design</figcaption>
+</figure>
+
+<figure align="center">
+    <img src="Screenshots/Submissions/7.png" alt="drawing" width=400/>
+    <figcaption>Submitted Design</figcaption>
+</figure>
+
+<figure align="center">
+    <img src="Screenshots/Submissions/8.png" alt="drawing" width=400/>
+    <figcaption>Submitted Design</figcaption>
+</figure>
